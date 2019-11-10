@@ -1,0 +1,159 @@
+.testimonials {
+	&__inner {
+		display: flex;
+		min-height: 500px;
+		position: relative;
+	}
+	&__photo {
+		width: 50%;
+	}
+	&__photo-item {
+		min-height: 100%;
+		min-width: 100%;
+		width: auto;
+		height: auto;
+		display: none;
+		float: right;
+		animation-name: fade;
+		animation-duration: .4s;
+		animation-fill-mode: forwards;
+		&--active {
+			animation-direction: reverse;
+			display: block;
+		}
+	}
+	&__feedback {
+		background-color: #523449;
+		width: 50%;
+		padding-bottom: 130px;
+	}
+	&__feedback-item {
+		max-width: 500px;
+		display: none;
+		animation-name: fade;
+		animation-duration: .4s;
+		animation-fill-mode: forwards;
+		padding-top: 110px;
+		padding-left: 85px;
+		&--active {
+			animation-direction: reverse;
+			display: block;
+		}
+	}
+	&__feedback-text {
+		color: #fff;
+		font-family: Cardo, serif;
+		font-size: 36px;
+		line-height: 42px;
+		font-style: italic;
+		margin-bottom: 30px;
+	}
+	&__feedback-name {
+		color: #fff;
+		font-size: 13px;
+		font-family: $font-2;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__buttons {
+		display: flex;
+		position: absolute;
+		width: 50%;
+		max-width: 585px;
+		width: 48%;
+		left: 50%;
+		bottom: 100px;
+		justify-content: center;
+	}
+	&__button {
+		opacity: .2;
+		height: 12px;
+		width: 12px;
+		border-radius: 50%;
+		border: 0;
+		transition: opacity .2s ease;
+		cursor: pointer;
+		&:not(:last-child) {
+			margin-right: 8px;
+		}
+		&:hover {
+			opacity: .8;
+		}
+		&--active {
+			opacity: 1;
+			&:hover {
+				opacity: 1; 
+			}
+		}
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: .2;
+	}
+}
+
+@media (max-width: $breakpoint-tablet) {
+	.testimonials {
+		&__inner {
+			flex-wrap: wrap;
+		}
+		&__photo {
+			width: 100%;
+		}
+		&__photo-item {
+			min-height: 100%;
+			min-width: 100%;
+			width: 100%;
+		}
+		&__feedback {
+			width: 100%;
+			padding-bottom: 25px;
+		}
+		&__feedback-item {
+			max-width: 100%;
+			padding-top: 25px;
+			padding-left: 25px;
+			padding: 25px;
+			min-height: 250px;
+		}
+		&__feedback-text {
+			padding-right: 50px;
+			font-size: 32px;
+			line-height: 38px;
+			margin-bottom: 25px;
+		}
+		&__feedback-name {
+			font-size: 13px;
+			font-family: $font-2;
+		}
+		&__buttons {
+			width: 100%;
+			max-width: 100%;
+			left: 0;
+			bottom: 32px;
+		}
+	}
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.testimonials {
+		&__feedback-text {
+			padding-right: 25px;
+			font-size: 24px;
+			line-height: 24px;
+		}
+		&__feedback-name {
+			font-size: 12px;
+			font-weight: 600;
+			font-family: $font-2;
+		}
+		&__buttons {
+			bottom: 20px;
+		}
+	}
+}

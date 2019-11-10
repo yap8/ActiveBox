@@ -1,0 +1,22 @@
+.works {
+	&__inner {
+
+	}
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		width: 25%;
+	}
+}
+
+@media (max-width: $breakpoint-tablet) {
+	.works {
+		&__item {
+			width: 50%;
+		}
+	}
+}
+
+@import 'works-item';

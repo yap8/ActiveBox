@@ -1,0 +1,79 @@
+.hero {
+	background-image: url(../images/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	&__inner {
+		min-height: 750px;
+	}
+	&__content {
+		margin: auto;
+		min-height: 650px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&__title {
+		font-size: 65px;
+		font-weight: 700;
+		color: $color-secondary;
+		font-family: $font-1;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 71px;
+		margin-bottom: 23px;	
+	}
+	&__text {
+		font-size: 22px;
+		color: $color-secondary;
+		font-family: $font-2;
+		line-height: 33px;
+		text-align: center;
+		margin-bottom: 73px;
+	}
+	&__button {
+
+	}
+}
+
+@media (max-width: $breakpoint-tablet) {
+	.hero {
+		&__inner {
+			min-height: 550px;
+		}
+		&__content {
+			min-height: 450px;
+		}
+		&__title {
+			font-size: 42px;
+			line-height: 48px;
+			margin-bottom: 20px;
+		}
+		&__text {
+			font-size: 18px;
+			line-height: 24px;
+			margin-bottom: 50px;
+		}
+	}
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.hero {
+		&__inner {
+			min-height: 450px;
+		}
+		&__content {
+			min-height: 350px;
+		}
+		&__title {
+			font-size: 32px;
+			line-height: 32px;
+			margin-bottom: 15px;
+		}
+		&__text {
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 25px;
+		}
+	}
+}
