@@ -209,10 +209,7 @@ li {
       margin-bottom: 32px; } }
 
 .features-item__icon {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   display: block;
   margin: auto;
   margin-bottom: 32px; }
@@ -426,12 +423,9 @@ li {
   height: auto;
   display: none;
   float: right;
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  -webkit-animation-duration: .4s;
-          animation-duration: .4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
+  animation-name: fade;
+  animation-duration: .4s;
+  animation-fill-mode: forwards; }
   .testimonials__photo-item--active {
     animation-direction: reverse;
     display: block; }
@@ -444,12 +438,9 @@ li {
 .testimonials__feedback-item {
   max-width: 500px;
   display: none;
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  -webkit-animation-duration: .4s;
-          animation-duration: .4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: fade;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
   padding-top: 110px;
   padding-left: 85px; }
   .testimonials__feedback-item--active {
@@ -497,12 +488,6 @@ li {
     opacity: 1; }
     .testimonials__button--active:hover {
       opacity: 1; }
-
-@-webkit-keyframes fade {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: .2; } }
 
 @keyframes fade {
   0% {
