@@ -6,7 +6,7 @@
     "deploy": "gh-pages -d dist"
   },
   "author": "Arseny Nebozhenko",
-  "homepage": "https://arsenyNebozhenko.io/ActiveBox",
+  "homepage": "https://yap8.github.io/active-box",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.7.2",
