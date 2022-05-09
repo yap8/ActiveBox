@@ -2,7 +2,7 @@
   "name": "template",
   "version": "1.0.0",
   "description": "basic template",
-  "homepage": "https://yap8.github.io/active-box",
+  "homepage": "http://yap8.github.io/active-box",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
