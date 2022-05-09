@@ -609,6 +609,9 @@ li {
     color: #7F7F7F;
     font-family: "Open Sans", sans-serif;
     font-size: 14px; }
+  .footer__link {
+    color: white;
+    text-decoration: underline; }
 
 @media (max-width: 1024px) {
   .footer__items {

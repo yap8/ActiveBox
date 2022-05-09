@@ -24,6 +24,10 @@
 		font-family: $font-1;
 		font-size: 14px;
 	}
+	&__link {
+		color: white;
+		text-decoration: underline;
+	}
 }
 
 @media (max-width: $breakpoint-tablet) {

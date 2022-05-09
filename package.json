@@ -2,11 +2,11 @@
   "name": "template",
   "version": "1.0.0",
   "description": "basic template",
+  "homepage": "https://yap8.github.io/activeBox",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
   "author": "Arseny Nebozhenko",
-  "homepage": "https://yap8.github.io/active-box",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.7.2",
